@@ -16,13 +16,13 @@ function generateMarkdown(data) {
 ## Description
   ${data.description}
 ## Table of Contents
-  1. [Description](#description)
-  2. [Installation Instructions](#installation)
-  3. [Usage Information](#usage)
-  4. [License](#license)
-  5. [Contribution Guidelines](#contributing) 
-  6. [Tests](#tests)
-  7. [Questions](#questions)
+  1. [Description](#description)<br/>
+  2. [Installation Instructions](#installation)<br/>
+  3. [Usage Information](#usage)<br/>
+  4. [License](#license)<br/>
+  5. [Contribution Guidelines](#contributing)<br/>
+  6. [Tests](#tests)<br/>
+  7. [Questions](#questions)<br/>
 ## Installation
   ${data.installation}
 ## Usage
@@ -33,8 +33,7 @@ function generateMarkdown(data) {
 ## Tests
   ${data.tests}
 ## Questions
-  Feel free to check out my other projects at [GitHub - ${data.username}](github.com/${data.username}).
-
+  Feel free to check out my other projects at [GitHub - ${data.username}](github.com/${data.username}).<br/>
   For any additional questions, please feel free to reach out to me at <${data.email}>
 `;
 }

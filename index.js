@@ -2,7 +2,6 @@
 
 const fs = require('fs');
 const inquirer = require("inquirer");
-const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // TODO: Create an array of questions for user input
@@ -74,8 +73,6 @@ const init = () => {
         return console.log("README generated!")
       }
     }));
-    // .then(() => console.log('Successfuly created a new README file'))
-    // .catch((err) => console.error(err));
 };
 
 // Function call to initialize app

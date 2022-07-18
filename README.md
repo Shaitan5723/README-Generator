@@ -1,23 +1,23 @@
 # README Generator
 ## Description
-  The application is designed to run in the terminal, and will prompt users to input information related to a professional README file. Users will them follow the prompts and input data to generate a proper README file.
+  The application is used to generate professional README files based on user input.
 ## Table of Contents
-  1.[Description](#description)
-  2.[Installation Instructions](#installation)
-  3.[Usage Information](#usage)
-  4.[License](#license)
-  5.[Contribution Guidelines](#contributing) 
-  6.[Tests](#tests)
-  7.[Questions](#questions)
+  1. [Description](#description)<br/>
+  2. [Installation Instructions](#installation)<br/>
+  3. [Usage Information](#usage)<br/>
+  4. [License](#license)<br/>
+  5. [Contribution Guidelines](#contributing)<br/>
+  6. [Tests](#tests)<br/>
+  7. [Questions](#questions)<br/>
 ## Installation
-  Start by running npm i to install the inquirer package, then run node index.js
+  Start off by running 'npm i' in the terminal to install inquirer, then run 'node index.js' in the terminal.
 ## Usage
-  In the generation of readme files
+  README generation
 ## License
 ## Contributing
   none
 ## Tests
   none
 ## Questions
-  Feel free to check out my other projects at [GitHub - Shaitan5723](github.com/Shaitan5723)
+  Feel free to check out my other projects at [GitHub - Shaitan5723](github.com/Shaitan5723).<br/>
   For any additional questions, please feel free to reach out to me at <alexyxu@umich.edu>
