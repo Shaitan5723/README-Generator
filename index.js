@@ -67,7 +67,13 @@ const questions = [
 
 const init = () => {
   inquirer.prompt(questions)
-    .then((data) => fs.writeFile('README.md', generateMarkdown(data), (err)));
+    .then((data) => fs.writeFile('README.md', generateMarkdown(data), (err) =>{
+      if (err) {
+        return console.error(err)
+      } else {
+        return console.log("README generated!")
+      }
+    }));
     // .then(() => console.log('Successfuly created a new README file'))
     // .catch((err) => console.error(err));
 };
