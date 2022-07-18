@@ -3,7 +3,7 @@
 const fs = require('fs');
 const inquirer = require("inquirer");
 const util = require('util');
-const generatorMarkdown = require('./utils/generateMarkdown.js')
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -19,11 +19,6 @@ const questions = [
     },
     {
       type: 'input',
-      name: 'table of contents',
-      message: 'Please enter the table of contents for this project.',
-    },
-    {
-      type: 'input',
       name: 'installation',
       message: 'What are the installation instructions of your project?',
     },
@@ -35,7 +30,7 @@ const questions = [
     {
       type: 'input',
       name: 'license',
-      message: 'Please input the license of your project.',
+      message: 'Please input the licenses of your project.',
     },
     {
       type: 'input',
@@ -47,26 +42,34 @@ const questions = [
       name: 'tests',
       message: 'What are the test instructions of your project?',
     },
+    {
+      type: 'input',
+      name: 'username',
+      message: 'What is your GitHub username?',
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'What is your email address?',
+    },
   ]
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data, err) {
-  console.log(fileName)
-  console.log(data)
-    if (err) {
-      return console.log(err)
-    } else {
-      console.log("success")
-    }
-    }
+// // TODO: Create a function to write README file
+// fs.writeFile(fileName, data, err => {
+//   console.log(fileName)
+//   console.log(data)
+//     if (err) {
+//       return console.error(err)
+//     }
+//     });
 
 
 const init = () => {
-  questions()
-    .then((answers) => fs.writeFile('README.md', questions(answers)))
-    .then(() => console.log('Successfuly created a new README file'))
-    .catch((err) => console.error(err));
+  inquirer.prompt(questions)
+    .then((data) => fs.writeFile('README.md', generateMarkdown(data), (err)));
+    // .then(() => console.log('Successfuly created a new README file'))
+    // .catch((err) => console.error(err));
 };
 
 // Function call to initialize app
