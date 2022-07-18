@@ -53,7 +53,7 @@ const questions = [
 
 const init = () => {
   inquirer.prompt(questions)
-    .then((data) => fs.writeFile('README.md', generateMarkdown(data), (err) =>{
+    .then((data) => fs.writeFile('newREADME.md', generateMarkdown(data), (err) =>{
       if (err) {
         return console.error(err)
       } else {
