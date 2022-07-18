@@ -7,7 +7,7 @@ The generated file in VS Code:
 ![generated_readme](/assets/images/generated_readme1.png)
 
 The generated file is named newREADME.md for the purposes of displaying the correct README in this repo. Please click this [link to navigate to newREADME.md](/newREADME.md) or refer to this picture:
-![generated_readme_on_GitHub](/assets/images/generated_readme.png).
+![generated_readme_on_GitHub](/assets/images/generated_readme.png)
 
 ## Technologies Used
 This application runs JavaScript through Node.js and employs the inquirer package.

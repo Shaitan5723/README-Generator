@@ -1,9 +1,11 @@
+//packages required to run the application
 const fs = require('fs');
 const inquirer = require("inquirer");
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
+//The list of questions that will be run by inquirer.prompt
 const questions = [
-    {
+    { // User input type of question
       type: 'input',
       name: 'title',
       message: 'What is the title of your project?',
@@ -23,7 +25,7 @@ const questions = [
       name: 'usage',
       message: 'Where will your project be used?',
     },
-    {
+    { // A list type of question, where the user selects an option from a list
       type: 'list',
       name: 'license',
       message: 'Please input the licenses of your project.',
@@ -51,9 +53,10 @@ const questions = [
     },
   ]
 
+// The intialization process
 const init = () => {
-  inquirer.prompt(questions)
-    .then((data) => fs.writeFile('newREADME.md', generateMarkdown(data), (err) =>{
+  inquirer.prompt(questions) //prompts the users with the questions listed above
+    .then((data) => fs.writeFile('newREADME.md', generateMarkdown(data), (err) =>{ //writes the data into the markdown file
       if (err) {
         return console.error(err)
       } else {
