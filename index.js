@@ -1,10 +1,7 @@
-// TODO: Include packages needed for this application
-
 const fs = require('fs');
 const inquirer = require("inquirer");
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
-// TODO: Create an array of questions for user input
 const questions = [
     {
       type: 'input',
@@ -27,9 +24,10 @@ const questions = [
       message: 'Where will your project be used?',
     },
     {
-      type: 'input',
+      type: 'list',
       name: 'license',
       message: 'Please input the licenses of your project.',
+      choices: ['MIT', 'Apache', 'GPL', 'BSD', 'No License'],
     },
     {
       type: 'input',
@@ -52,17 +50,6 @@ const questions = [
       message: 'What is your email address?',
     },
   ]
-
-
-// // TODO: Create a function to write README file
-// fs.writeFile(fileName, data, err => {
-//   console.log(fileName)
-//   console.log(data)
-//     if (err) {
-//       return console.error(err)
-//     }
-//     });
-
 
 const init = () => {
   inquirer.prompt(questions)

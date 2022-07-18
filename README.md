@@ -1,19 +1,21 @@
 # README Generator
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
-  The application is used to generate professional README files based on user input.
+  This is an application that...
 ## Table of Contents
-  1. [Description](#description)<br/>
-  2. [Installation Instructions](#installation)<br/>
-  3. [Usage Information](#usage)<br/>
-  4. [License](#license)<br/>
-  5. [Contribution Guidelines](#contributing)<br/>
-  6. [Tests](#tests)<br/>
-  7. [Questions](#questions)<br/>
+  [Description](#description)<br/>
+  [Installation Instructions](#installation)<br/>
+  [Usage Information](#usage)<br/>
+  [License](#license)<br/>
+  [Contribution Guidelines](#contributing)<br/>
+  [Tests](#tests)<br/>
+  [Questions](#questions)<br/>
 ## Installation
-  Start off by running 'npm i' in the terminal to install inquirer, then run 'node index.js' in the terminal.
+  npm i
 ## Usage
-  README generation
+  Readme Generation
 ## License
+  This application is covered under the [MIT](https://opensource.org/licenses/MIT) license
 ## Contributing
   none
 ## Tests
