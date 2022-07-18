@@ -6,7 +6,8 @@ Please refer to [this video](https://drive.google.com/file/d/1klkf_0FpcgkR5JVpuw
 The generated file in VS Code:
 ![generated_readme](/assets/images/generated_readme1.png)
 
-The generated file is named newREADME.md for the purposes of displaying the correct README in this repo. Please click this [link to navigate to newREADME.md](/newREADME.md) or refer to this picture:
+The generated file is named newREADME.md for the purposes of displaying the correct README for this application on GitHub. If a user wanted to generate README.md using the application, then they must switch the fileName in the fs.writeFile function on line 59 of index.js.
+To see the generated README, please click this [link to navigate to newREADME.md](/newREADME.md) or refer to this picture:
 ![generated_readme_on_GitHub](/assets/images/generated_readme.png)
 
 ## Technologies Used
