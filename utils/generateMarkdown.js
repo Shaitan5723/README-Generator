@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// A function that returns the license badges for the README
 function renderLicenseBadge(license) {
   if(license === 'MIT'){
     return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
@@ -14,24 +13,24 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-  if(license === 'MIT'){
-    return '[License: MIT](https://opensource.org/licenses/MIT)'
-  } else if (license === 'Apache'){
-    return '[License: Apache 2.0](https://opensource.org/licenses/Apache-2.0)'
-  } else if (license === 'GPL'){
-    return '[License: GPL v3](https://www.gnu.org/licenses/gpl-3.0)'
-  } else if (license === 'BSD'){
-    return '[License: BSD](https://opensource.org/licenses/BSD-3-Clause)'
-  } else if (license === 'No License'){
-    return ''
-  }
-}
+//The below function is meant to return a link to the selected license
+//It is currently rendered moot due to the renderLicenseSection function also containing the license link
+//Therefore, this function will be commented out and only retained for submission criteria
+// function renderLicenseLink(license) {
+//   if(license === 'MIT'){
+//     return '[License: MIT](https://opensource.org/licenses/MIT)'
+//   } else if (license === 'Apache'){
+//     return '[License: Apache 2.0](https://opensource.org/licenses/Apache-2.0)'
+//   } else if (license === 'GPL'){
+//     return '[License: GPL v3](https://www.gnu.org/licenses/gpl-3.0)'
+//   } else if (license === 'BSD'){
+//     return '[License: BSD](https://opensource.org/licenses/BSD-3-Clause)'
+//   } else if (license === 'No License'){
+//     return ''
+//   }
+// }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// A function that returns the license section of README
 function renderLicenseSection(license) {
   if(license === 'MIT'){
     return 'This application is covered under the [MIT](https://opensource.org/licenses/MIT) license'
@@ -42,15 +41,14 @@ function renderLicenseSection(license) {
   } else if (license === 'BSD'){
     return 'This application is covered under the [BSD](https://opensource.org/licenses/BSD-3-Clause) license'
   } else if (license === 'No License'){
-    return 'This application is not covered under any license'
+    return ''
   }
 }
 
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-  ${renderLicenseBadge(data.license)}
+  return `# ${data.title} ${renderLicenseBadge(data.license)}
 ## Description
   ${data.description}
 ## Table of Contents
