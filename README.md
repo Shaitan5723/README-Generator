@@ -19,5 +19,5 @@
 ## Tests
   none
 ## Questions
-  Feel free to check out my other projects at [GitHub - Shaitan5723](github.com/Shaitan5723).<br/>
+  Feel free to check out my other projects at [GitHub - Shaitan5723](https://github.com/Shaitan5723).<br/>
   For any additional questions, please feel free to reach out to me at <alexyxu@umich.edu>
