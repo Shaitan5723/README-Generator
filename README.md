@@ -9,7 +9,9 @@ Below is a video demo on how the application is used. </br>
 https://user-images.githubusercontent.com/105050107/180182185-93fae07c-8ce5-4170-8cb2-8cfb4cbb5906.mp4
 
 </br>
-In case the above video does not work, please use [this link.](https://drive.google.com/file/d/1klkf_0FpcgkR5JVpuw8wr9nYB9a2SkAY/view?usp=sharing) </br>
+
+In case the above video does not work, please use [this link](https://drive.google.com/file/d/1klkf_0FpcgkR5JVpuw8wr9nYB9a2SkAY/view?usp=sharing)
+</br>
 
 The generated file in VS Code:
 ![generated_readme](/assets/images/generated_readme1.png)
